@@ -22,7 +22,7 @@ class _OrganosPageState extends State<OrganosPage> {
 
   List<Organos> _organos = List<Organos>();
   Future<List<Organos>> fetchOrganos() async {
-    var url = "https://benefits-user-dot-yuyaytest.uc.r.appspot.com/v2/get/functions";
+    var url = "https://benefits-user-dot-yuyaytest.uc.r.appspot.com/v2/get/organs";
     var response = await http.get(Uri.parse(url));
 
     var organos = List<Organos>();
@@ -59,7 +59,7 @@ class _OrganosPageState extends State<OrganosPage> {
               color: Colors.deepOrange[50],
               clipBehavior: Clip.hardEdge,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(40)),
                 child:InkWell(
                   onTap:(){   
                   } ,
