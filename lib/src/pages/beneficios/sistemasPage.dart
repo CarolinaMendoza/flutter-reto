@@ -50,7 +50,7 @@ class _SistemasPageState extends State<SistemasPage> {
     
     return Scaffold(
         appBar: AppBar(
-          title: Text("Organos"),
+          title: Text("Sistemas"),
         ),
         body: ListView.builder(
           itemBuilder: (context, index){
