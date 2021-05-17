@@ -22,7 +22,7 @@ class _SistemasPageState extends State<SistemasPage> {
 
   List<Sistemas> _sistemas = List<Sistemas>();
   Future<List<Sistemas>> fetchSistemas() async {
-    var url = "https://benefits-user-dot-yuyaytest.uc.r.appspot.com/v2/get/functions";
+    var url = "https://benefits-user-dot-yuyaytest.uc.r.appspot.com/v2/get/system";
     var response = await http.get(Uri.parse(url));
 
     var sistemas = List<Sistemas>();
@@ -59,7 +59,7 @@ class _SistemasPageState extends State<SistemasPage> {
               color: Colors.lightBlue[100],
               clipBehavior: Clip.hardEdge,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(40)),
                 child:InkWell(
                   onTap:(){   
                   } ,
